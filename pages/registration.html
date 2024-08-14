@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-logo">
+                <a href="../index.html"><img src="../img/github.png" alt="logo"></a>
+                <span>GitHub</span>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="../index.html">Clubs</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="https://github.com/guboss3214" target="_blank">GitHub</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="header-reg">
+                <a class="reg" href="#">Registration</a>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <main class="form">
+        <div class="container">
+            <form action="https://tests.fomenko.top/echo/index.php" method="post">
+                <fieldset>
+                    <legend><strong>General info</strong></legend>
+                    <div class="form-container">
+                        <div>
+                            <label for="login">Login</label>
+                            <input type="text" name="login" id="login" placeholder="Login" required="">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email" required="">
+                        </div>
+                        <div>
+                            <label for="pass">Password</label>
+                            <input type="password" name="pass" id="pass" placeholder="Password" required="">
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="Write text here"></textarea>
+                        </div>
+                        <div>
+                            <label for="birth">Age</label>
+                            <input type="date" name="birth" id="birth">
+                        </div>
+                        <div>
+                            <label for="country">Country</label>
+                            <select name="country" id="country">
+                            <option value="usa">Usa</option>
+                            <option value="ua">Ukraine</option>
+                            <option value="pl">Poland</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="gender-form">
+                    <legend><strong>Gender</strong></legend>
+                    <div class="form-container">
+                        <div class="gender-input">
+                            <input name="sex" id="mail" type="radio" value="mail">
+                            <label for="mail">Male</label>
+                        </div>
+                        <div class="gender-input">
+                            <input name="sex" id="femail" type="radio" value="femail">
+                            <label for="femail">Female</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="input-group">
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset" onclick="alert('Reset successful')">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div class="container">
+            &copy; 2024
+        </div>
+    </footer>
+</body>
+</html>
