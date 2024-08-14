@@ -9,6 +9,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(24, 23, 23);
     color: white;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -22,12 +23,14 @@ li{
 
 header{
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-height: 100px;
+    background-color: rgb(24, 23, 23);
 }
 
 .container{
-    padding: 10px 20px;
+    padding: 0.5em 1em;
 }
 
 .header-logo{
@@ -44,6 +47,7 @@ header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -79,4 +83,37 @@ header .container{
 
 .header-nav ul li a:hover{
     color: rgb(102, 102, 102);
+}
+
+main{
+    margin-top: 100px;
+}
+
+main .container{
+    text-align: center;
+}
+
+.main-clubs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.main-clubs a{
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.main-club{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px;
+    width: 16em;
+}
+
+.main-clubs a:hover{
+    border-color: aqua;
 }
