@@ -28,6 +28,10 @@ li{
     padding: 2em 1em;
 }
 
+header .container{
+    padding: 0.5em 1em;
+}
+
 .header-logo{
     display: flex;
     align-items: center;
@@ -145,4 +149,24 @@ footer .container{
     align-items: center;
     justify-content: center;
     padding: 20px 0px;
+}
+
+/* Gallery page */
+
+.gallery-players{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery-player{
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 400px;
+    padding: 10px 20px;
+}
+
+.gallery-player img{
+    height: 200px;
 }
